@@ -731,6 +731,10 @@ img {
           box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068), 0 4px 4px rgba(0, 0, 0, 0.105);
 }
 
+.features__img-container > img {
+  width: 100%;
+}
+
 .footer__sections {
   justify-items: center;
 }

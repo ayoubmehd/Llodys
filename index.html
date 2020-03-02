@@ -7,42 +7,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- styles needed by jScrollPane -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/style/jquery.jscrollpane.css" /> -->
+
   <link rel="stylesheet" href="./css/main.css">
   <title>LLody</title>
 </head>
 
 <body class="background">
 
-  <!-- Start Header -->
+  <div class="scroll-pane">
 
-  <header class="header font__size--1">
-    <div class="header__upper">
-      <div class="header__upper-wapper container--flex container--flex--space-between padding--global py--p5">
-        <ul class="header__contacts">
-          <li class="header__contact "><i class="fa fa-inbox header__contact-icon" aria-hidden="true"></i>lmsc@lloyds.ma
-          </li>
-          <li class="header__contact"><i class="header__contact-icon"></i>+212 5 24 62 39 62 </li>
-          <li class="header__contact"><i class="fa fa-phone header__contact-icon" aria-hidden="true"></i>+212 6 61
-            30 78 05</li>
-        </ul>
-        <div class="header__right">
-          <i class="fa fa-facebook header__icon" aria-hidden="true"></i>
-          <i class="fa fa-twitter header__icon" aria-hidden="true"></i>
-          <i class="fa fa-linkedin header__icon" aria-hidden="true"></i>
+
+    <!-- Start Header -->
+
+    <header class="header font__size--1">
+      <div class="header__upper">
+        <div class="header__upper-wapper container--flex container--flex--space-between padding--global py--p5">
+          <ul class="header__contacts">
+            <li class="header__contact "><i class="fa fa-inbox header__contact-icon"
+                aria-hidden="true"></i>lmsc@lloyds.ma
+            </li>
+            <li class="header__contact"><i class="header__contact-icon"></i>+212 5 24 62 39 62 </li>
+            <li class="header__contact"><i class="fa fa-phone header__contact-icon" aria-hidden="true"></i>+212 6 61
+              30 78 05</li>
+          </ul>
+          <div class="header__right">
+            <i class="fa fa-facebook header__icon" aria-hidden="true"></i>
+            <i class="fa fa-twitter header__icon" aria-hidden="true"></i>
+            <i class="fa fa-linkedin header__icon" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="header__mobile-upper padding--global py--p5">
+          <div class="header__contacts-mobile">
+            <button class="header__contact-mobile radius">Contact</button>
+          </div>
+
+          <div class="container--flex header__get-aquote-container">
+            <a href="#" class="header__get-aquote header__get-aquote--nav radius">GET A QUOTE</a>
+          </div>
         </div>
       </div>
-
-      <div class="header__mobile-upper padding--global py--p5">
-        <div class="header__contacts-mobile">
-          <button class="header__contact-mobile radius">Contact</button>
-        </div>
-
-        <div class="container--flex header__get-aquote-container">
-          <a href="#" class="header__get-aquote header__get-aquote--nav radius">GET A QUOTE</a>
-        </div>
-      </div>
-    </div>
-    <!-- 
+      <!-- 
     <div class="header__middle py--p5">
       <div class="header__wapper container--flex container--flex--space-between padding--global">
         <div class="header__logo container--flex">
@@ -61,374 +68,388 @@
         </div>
       </div>
     </div> -->
-    <nav class="header__nav">
-      <div class="container--flex container--flex--space-between padding--global header__nav-bar">
-        <div class="header__logo container--flex">
-          <img src="./icons/logo0.png" alt="LLody">
-        </div>
-        <ul class="uppercase header__nav-elms container--flex container--flex--space-between ">
-          <li class="header__nav-elm">Home</li>
-          <li class="header__nav-elm">About Us <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
-          </li>
-          <li class="header__nav-elm">Services <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
-          </li>
-          <li class="header__nav-elm">Our People <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
-          </li>
-          <li class="header__nav-elm">Global SURVEYOR NETWORK</li>
-          <li class="header__nav-elm">CONTACT US</li>
-        </ul>
+      <nav class="header__nav">
+        <div class="container--flex container--flex--space-between padding--global header__nav-bar">
+          <div class="header__logo container--flex">
+            <img src="./icons/logo0.png" alt="LLody">
+          </div>
+          <ul class="uppercase header__nav-elms container--flex container--flex--space-between ">
+            <li class="header__nav-elm">Home</li>
+            <li class="header__nav-elm">About Us <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+            </li>
+            <li class="header__nav-elm">Services <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+            </li>
+            <li class="header__nav-elm">Our People <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+            </li>
+            <li class="header__nav-elm">Global SURVEYOR NETWORK</li>
+            <li class="header__nav-elm">CONTACT US</li>
+          </ul>
 
-        <div class="container--flex header__get-aquote-container d-max-700--none">
-          <a href="#" class="header__get-aquote header__get-aquote--nav radius position--relative">
-            <span class="overlay header__get-aquote-overlay"></span>
-            <span class="header__get-aquote-text">GET A QUOTE</span>
-          </a>
-        </div>
-
-        <div class="header__button pl--1">
-          <i class="fa fa-align-justify fa-lg"></i>
-        </div>
-      </div>
-    </nav>
-
-    <div style="background-image: url('./img/header-bg.png');" class="header__hero background-image">
-      <div class="overlay"></div>
-      <div class="header__hero-container h--100">
-        <div class="header__hero-text container--flex padding--global h--100 text--center">
-          <h1 class="header__hero-title">Welcome to LMSC</h1>
-          <p class="header__hero-description mt--1">
-            LMSC is one of the world's leading independent marine surveying companies, providing a wide portfolio of
-            services in cargo, nautical and technical matters.
-          </p>
-          <div class="mt--1">
-            <a href="#" class="header__get-aquote header__get-aquote--hero font--bold radius position--relative">
+          <div class="container--flex header__get-aquote-container d-max-700--none">
+            <a href="#" class="header__get-aquote header__get-aquote--nav radius position--relative">
               <span class="overlay header__get-aquote-overlay"></span>
               <span class="header__get-aquote-text">GET A QUOTE</span>
             </a>
           </div>
+
+          <div class="header__button pl--1">
+            <i class="fa fa-align-justify fa-lg"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div style="background-image: url('./img/header-bg.png');" class="header__hero background-image">
+        <div class="overlay"></div>
+        <div class="header__hero-container h--100">
+          <div class="header__hero-text container--flex padding--global h--100 text--center">
+            <h1 class="header__hero-title">Welcome to LMSC</h1>
+            <p class="header__hero-description mt--1">
+              LMSC is one of the world's leading independent marine surveying companies, providing a wide portfolio of
+              services in cargo, nautical and technical matters.
+            </p>
+            <div class="mt--1">
+              <a href="#" class="header__get-aquote header__get-aquote--hero font--bold radius position--relative">
+                <span class="overlay header__get-aquote-overlay"></span>
+                <span class="header__get-aquote-text">GET A QUOTE</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Our Mission -->
+
+    <section class=" our-mission mt--4">
+
+      <div>
+
+        <h2 class="our-mission__header text--center">Our Mission</h2>
+        <p class="our-mission__text text--center mt--2 padding--global">
+          To provide the most innovative high quality, cost effective risk control consultancy and survey
+          services to
+          support our clients mitigate and minimize the risks
+          they face when undertaking marine transportation, offshore drilling and marine construction
+          operations while
+          executing their projects
+          and marine operations in a timely and safe manner.
+        </p>
+      </div>
+
+      <div class="grid our-mission__grid position--relative mt--2 h--min--45">
+        <div class="our-mission__text w100 padding--global mb--2">
+          <div class="">
+            <p class="w100 mt--2">
+              Our business focuses on all aspects of maritime transportation, construction / installation and
+              drilling
+              operations in the marine environment and upon the accidents and disputes that sometimes arise.
+              Thanks to our
+              multi-disciplinary team’s technical expertise and hands-on experience, we have become a
+              recognised industry
+              organisation in all of our fields of activity globally.
+            </p>
+
+            <p class="w100 mt--2">Our broad experience and our team's are highly valued by clients from almost
+              every
+              sector
+              of
+              the maritime &
+              energy industries. These include maritime management and energy companies, P&I clubs, marine and
+              energy
+              insurers, ship owners and charterers, admiralty lawyers and government bodies. We develop
+              long-standing
+              relationships with our clients, who appreciate our professionalism, high level of safety, and
+              above all our
+              ability to respond quickly and efficiently to all urgent incidents.</p>
+          </div>
+        </div>
+        <div style="background-image: url('./img/missions-img-1.jpg');"
+          class="background--cover our-mission__img our-mission__img--1"></div>
+        <div style="background-image: url('./img/missions-img-2.jpg');"
+          class="background--cover our-mission__img  our-mission__img--2"></div>
+        <div style="background-image: url('./img/missions-img-3.jpg');"
+          class="background--cover our-mission__img  our-mission__img--3"></div>
+        <div style="background-image: url('./img/missions-img-4.jpg');"
+          class="background--cover our-mission__img  our-mission__img--4"></div>
+        <div style="background-image: url('./img/missions-img-5.jpg');"
+          class="background--cover our-mission__img  our-mission__img--5"></div>
+      </div>
+
+    </section>
+
+    <!-- End Our Mission -->
+
+    <!-- Start Our Vision -->
+
+    <div class="our-vision py--4 pb--5">
+      <div class="padding--global">
+        <h2 class="text--center">Our Vision</h2>
+        <div class="mt--2  text--center">
+          To maintain our status as a reputable marine & engineering survey and consultancy organisation
+          within the
+          maritime
+          and energy sectors recognised for our experience, the unsurpassed value of the service we provide
+          and high
+          quality
+          skills of our people..
         </div>
       </div>
     </div>
 
-  </header>
+    <!-- End Our Vision -->
 
-  <!-- End Header -->
+    <!-- Start Our Values -->
 
-  <!-- Start Our Mission -->
+    <div class="our-values">
 
-  <section class=" our-mission mt--4">
-
-    <div>
-
-      <h2 class="our-mission__header text--center">Our Mission</h2>
-      <p class="our-mission__text text--center mt--2 padding--global">
-        To provide the most innovative high quality, cost effective risk control consultancy and survey
-        services to
-        support our clients mitigate and minimize the risks
-        they face when undertaking marine transportation, offshore drilling and marine construction
-        operations while
-        executing their projects
-        and marine operations in a timely and safe manner.
-      </p>
-    </div>
-
-    <div class="grid our-mission__grid position--relative mt--2 h--min--45">
-      <div class="our-mission__text w100 padding--global mb--2">
-        <div class="">
-          <p class="w100 mt--2">
-            Our business focuses on all aspects of maritime transportation, construction / installation and
-            drilling
-            operations in the marine environment and upon the accidents and disputes that sometimes arise.
-            Thanks to our
-            multi-disciplinary team’s technical expertise and hands-on experience, we have become a
-            recognised industry
-            organisation in all of our fields of activity globally.
-          </p>
-
-          <p class="w100 mt--2">Our broad experience and our team's are highly valued by clients from almost
-            every
-            sector
-            of
-            the maritime &
-            energy industries. These include maritime management and energy companies, P&I clubs, marine and
-            energy
-            insurers, ship owners and charterers, admiralty lawyers and government bodies. We develop
-            long-standing
-            relationships with our clients, who appreciate our professionalism, high level of safety, and
-            above all our
-            ability to respond quickly and efficiently to all urgent incidents.</p>
+      <div class="our-values__wapper py--4">
+        <h2 class="our-values__header text--center">Our Values</h2>
+        <div class="our-values__text text--center mt--2">
+          <ul class="our-values__list">
+            <li>Safe operations</li>
+            <li>High quality in our service product</li>
+            <li>Delivery of consistent excellence in our Client relationships</li>
+            <li>Trust in our people</li>
+            <li>Confidence in our experience</li>
+            <li>Accountability in our business ethics</li>
+            <li>Prudence in our performance with continuous improvement</li>
+          </ul>
         </div>
       </div>
-      <div style="background-image: url('./img/missions-img-1.jpg');"
-        class="background--cover our-mission__img our-mission__img--1"></div>
-      <div style="background-image: url('./img/missions-img-2.jpg');"
-        class="background--cover our-mission__img  our-mission__img--2"></div>
-      <div style="background-image: url('./img/missions-img-3.jpg');"
-        class="background--cover our-mission__img  our-mission__img--3"></div>
-      <div style="background-image: url('./img/missions-img-4.jpg');"
-        class="background--cover our-mission__img  our-mission__img--4"></div>
-      <div style="background-image: url('./img/missions-img-5.jpg');"
-        class="background--cover our-mission__img  our-mission__img--5"></div>
+
     </div>
 
-  </section>
+    <!-- End Our Values-->
 
-  <!-- End Our Mission -->
+    <!-- Start Professional Accreditations -->
 
-  <!-- Start Our Vision -->
+    <div class="professional-accreditations background--white py--4">
 
-  <div class="our-vision py--4 pb--5">
-    <div class="padding--global">
-      <h2 class="text--center">Our Vision</h2>
-      <div class="mt--2  text--center">
-        To maintain our status as a reputable marine & engineering survey and consultancy organisation
-        within the
-        maritime
-        and energy sectors recognised for our experience, the unsurpassed value of the service we provide
-        and high
-        quality
-        skills of our people..
+      <div class="professional-accreditations__wapper padding--global">
+        <h2 class="professional-accreditations__header text--center">
+          Professional Accreditations
+        </h2>
+        <div class="professional-accreditations__logos mt--2 px--4 text--center">
+          <img class="d--inline-block" src="./companys_logos/2.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/3.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/4.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/5.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/6.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/7.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/8.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/9.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/10.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/11.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/12.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/13.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/14.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/15.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/16.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/17.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/18.svg" alt="" srcset="">
+          <img class="d--inline-block" src="./companys_logos/19.svg" alt="" srcset="">
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- End Professional Accreditations -->
+
+    <!-- Start Features -->
+
+    <div class="features py--4">
+      <div class="features__wapper padding--global">
+        <h2 class="features__header text--center">Features</h2>
+        <div class=" features__cards mt--2 container--flex flex--wrap">
+
+
+          <div class="features__card px--1 mb--2">
+            <div class="features__card--wapper radius background--white overflow--hidden">
+              <div class="features__img-container">
+                <img src="./img/company.jpg" alt="LLody Company" srcset="">
+              </div>
+              <div class="features__text__container px--1 py--1">
+                <h3 class="features__card--header">Our Company</h3>
+                <p class="features__card--description mt--1">LMSC is one of the world's leading independent
+                  marine
+                  surveying
+                  companies.</p>
+                <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="features__card px--1 mb--2">
+            <div class="features__card--wapper radius background--white overflow--hidden">
+              <div class="features__img-container">
+                <img src="./img/company.jpg" alt="LLody Company" srcset="">
+              </div>
+              <div class="features__text__container px--1 py--1">
+                <h3 class="features__card--header">Our Company</h3>
+                <p class="features__card--description mt--1">LMSC is one of the world's leading independent
+                  marine
+                  surveying
+                  companies.</p>
+                <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="features__card px--1 mb--2">
+            <div class="features__card--wapper radius background--white overflow--hidden">
+              <div class="features__img-container">
+                <img src="./img/company.jpg" alt="LLody Company" srcset="">
+              </div>
+              <div class="features__text__container px--1 py--1">
+                <h3 class="features__card--header">Our Company</h3>
+                <p class="features__card--description mt--1">LMSC is one of the world's leading independent
+                  marine
+                  surveying
+                  companies.</p>
+                <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="features__card px--1 mb--2">
+            <div class="features__card--wapper radius background--white overflow--hidden">
+              <div class="features__img-container">
+                <img src="./img/company.jpg" alt="LLody Company" srcset="">
+              </div>
+              <div class="features__text__container px--1 py--1">
+                <h3 class="features__card--header">Our Company</h3>
+                <p class="features__card--description mt--1">LMSC is one of the world's leading independent
+                  marine
+                  surveying
+                  companies.</p>
+                <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="features__card px--1 mb--2">
+            <div class="features__card--wapper radius background--white overflow--hidden">
+              <div class="features__img-container">
+                <img src="./img/company.jpg" alt="LLody Company" srcset="">
+              </div>
+              <div class="features__text__container px--1 py--1">
+                <h3 class="features__card--header">Our Company</h3>
+                <p class="features__card--description mt--1">LMSC is one of the world's leading independent
+                  marine
+                  surveying
+                  companies.</p>
+                <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="features__card px--1 mb--2">
+            <div class="features__card--wapper radius background--white overflow--hidden">
+              <div class="features__img-container">
+                <img src="./img/company.jpg" alt="LLody Company" srcset="">
+              </div>
+              <div class="features__text__container px--1 py--1">
+                <h3 class="features__card--header">Our Company</h3>
+                <p class="features__card--description mt--1">LMSC is one of the world's leading independent
+                  marine
+                  surveying
+                  companies.</p>
+                <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
+
+    <!-- End Features -->
+
+    <!-- Start Footer -->
+
+    <footer class="footer background--main pt--4">
+      <div class="footer__wapper padding--global">
+        <div class="footer__sections container--flex container--flex--space-between flex--wrap">
+          <div class="footer__section">
+            <h3 class="footer__header">INFOS</h3>
+            <ul class="footer__list">
+              <li>+212 6 61 30 78 05</li>
+              <li>+212 5 24 62 39 62</li>
+              <li>lmsc@lloyds.ma</li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__header">GET IN TOUCH</h3>
+            <ul class="footer__list">
+              <li>Our Company</li>
+              <li>Contact us</li>
+              <li>Our Network</li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__header">QUICK LINKS</h3>
+            <ul class="footer__list">
+              <li>Our services</li>
+              <li>Our people</li>
+              <li>Terms and Conditions</li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__header">QUICK LINKS</h3>
+            <ul class="footer__list">
+              <li>Events</li>
+              <li>News</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__header">ACCREDITATIONS</h3>
+            <ul class="footer__list">
+              <li>International Marine Accredited
+                Surveyors Association </li>
+              <li>International Institute of Marine
+                Surveying </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer__copyright text--center mt--4 pb--2">
+          Copyright © 2020 lloyds.ma
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- latest jQuery direct from jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+
+    <!-- the mousewheel plugin - optional to provide mousewheel support -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"
+      integrity="sha256-VSluyclkkEBBFNZ6S8I2Okq/R6W0InHkqdukNreEYOY=" crossorigin="anonymous"></script> -->
+
+    <!-- the jScrollPane script -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/script/jquery.jscrollpane.js"
+      integrity="sha256-tvgvf6mC2sgo4q1GCerPKFg7q3C+3NnEmqkWR3HzGbg=" crossorigin="anonymous"></script> -->
+    <script src="./js/main.js"></script>
+
   </div>
 
-  <!-- End Our Vision -->
-
-  <!-- Start Our Values -->
-
-  <div class="our-values">
-
-    <div class="our-values__wapper py--4">
-      <h2 class="our-values__header text--center">Our Values</h2>
-      <div class="our-values__text text--center mt--2">
-        <ul class="our-values__list">
-          <li>Safe operations</li>
-          <li>High quality in our service product</li>
-          <li>Delivery of consistent excellence in our Client relationships</li>
-          <li>Trust in our people</li>
-          <li>Confidence in our experience</li>
-          <li>Accountability in our business ethics</li>
-          <li>Prudence in our performance with continuous improvement</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- End Our Values-->
-
-  <!-- Start Professional Accreditations -->
-
-  <div class="professional-accreditations background--white py--4">
-
-    <div class="professional-accreditations__wapper padding--global">
-      <h2 class="professional-accreditations__header text--center">
-        Professional Accreditations
-      </h2>
-      <div class="professional-accreditations__logos mt--2 px--4 text--center">
-        <img class="d--inline-block" src="./companys_logos/2.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/3.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/4.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/5.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/6.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/7.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/8.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/9.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/10.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/11.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/12.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/13.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/14.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/15.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/16.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/17.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/18.svg" alt="" srcset="">
-        <img class="d--inline-block" src="./companys_logos/19.svg" alt="" srcset="">
-
-      </div>
-    </div>
-
-  </div>
-
-  <!-- End Professional Accreditations -->
-
-  <!-- Start Features -->
-
-  <div class="features py--4">
-    <div class="features__wapper padding--global">
-      <h2 class="features__header text--center">Features</h2>
-      <div class=" features__cards mt--2 container--flex flex--wrap">
-
-
-        <div class="features__card px--1 mb--2">
-          <div class="features__card--wapper radius background--white overflow--hidden">
-            <div class="features__img-container">
-              <img src="./img/company.jpg" alt="LLody Company" srcset="">
-            </div>
-            <div class="features__text__container px--1 py--1">
-              <h3 class="features__card--header">Our Company</h3>
-              <p class="features__card--description mt--1">LMSC is one of the world's leading independent
-                marine
-                surveying
-                companies.</p>
-              <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="features__card px--1 mb--2">
-          <div class="features__card--wapper radius background--white overflow--hidden">
-            <div class="features__img-container">
-              <img src="./img/company.jpg" alt="LLody Company" srcset="">
-            </div>
-            <div class="features__text__container px--1 py--1">
-              <h3 class="features__card--header">Our Company</h3>
-              <p class="features__card--description mt--1">LMSC is one of the world's leading independent
-                marine
-                surveying
-                companies.</p>
-              <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="features__card px--1 mb--2">
-          <div class="features__card--wapper radius background--white overflow--hidden">
-            <div class="features__img-container">
-              <img src="./img/company.jpg" alt="LLody Company" srcset="">
-            </div>
-            <div class="features__text__container px--1 py--1">
-              <h3 class="features__card--header">Our Company</h3>
-              <p class="features__card--description mt--1">LMSC is one of the world's leading independent
-                marine
-                surveying
-                companies.</p>
-              <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="features__card px--1 mb--2">
-          <div class="features__card--wapper radius background--white overflow--hidden">
-            <div class="features__img-container">
-              <img src="./img/company.jpg" alt="LLody Company" srcset="">
-            </div>
-            <div class="features__text__container px--1 py--1">
-              <h3 class="features__card--header">Our Company</h3>
-              <p class="features__card--description mt--1">LMSC is one of the world's leading independent
-                marine
-                surveying
-                companies.</p>
-              <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="features__card px--1 mb--2">
-          <div class="features__card--wapper radius background--white overflow--hidden">
-            <div class="features__img-container">
-              <img src="./img/company.jpg" alt="LLody Company" srcset="">
-            </div>
-            <div class="features__text__container px--1 py--1">
-              <h3 class="features__card--header">Our Company</h3>
-              <p class="features__card--description mt--1">LMSC is one of the world's leading independent
-                marine
-                surveying
-                companies.</p>
-              <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="features__card px--1 mb--2">
-          <div class="features__card--wapper radius background--white overflow--hidden">
-            <div class="features__img-container">
-              <img src="./img/company.jpg" alt="LLody Company" srcset="">
-            </div>
-            <div class="features__text__container px--1 py--1">
-              <h3 class="features__card--header">Our Company</h3>
-              <p class="features__card--description mt--1">LMSC is one of the world's leading independent
-                marine
-                surveying
-                companies.</p>
-              <a href="#" class="features__card--link mt--1 button radius">Read More...</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- End Features -->
-
-  <!-- Start Footer -->
-
-  <footer class="footer background--main pt--4">
-    <div class="footer__wapper padding--global">
-      <div class="footer__sections container--flex container--flex--space-between flex--wrap">
-        <div class="footer__section">
-          <h3 class="footer__header">INFOS</h3>
-          <ul class="footer__list">
-            <li>+212 6 61 30 78 05</li>
-            <li>+212 5 24 62 39 62</li>
-            <li>lmsc@lloyds.ma</li>
-          </ul>
-        </div>
-
-        <div class="footer__section">
-          <h3 class="footer__header">GET IN TOUCH</h3>
-          <ul class="footer__list">
-            <li>Our Company</li>
-            <li>Contact us</li>
-            <li>Our Network</li>
-          </ul>
-        </div>
-
-        <div class="footer__section">
-          <h3 class="footer__header">QUICK LINKS</h3>
-          <ul class="footer__list">
-            <li>Our services</li>
-            <li>Our people</li>
-            <li>Terms and Conditions</li>
-          </ul>
-        </div>
-
-        <div class="footer__section">
-          <h3 class="footer__header">QUICK LINKS</h3>
-          <ul class="footer__list">
-            <li>Events</li>
-            <li>News</li>
-            <li>Careers</li>
-          </ul>
-        </div>
-
-        <div class="footer__section">
-          <h3 class="footer__header">ACCREDITATIONS</h3>
-          <ul class="footer__list">
-            <li>International Marine Accredited
-              Surveyors Association </li>
-            <li>International Institute of Marine
-              Surveying </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="footer__copyright text--center mt--4 pb--2">
-        Copyright © 2020 lloyds.ma
-      </div>
-    </div>
-  </footer>
-
-  <!-- End Footer -->
-
-  <script src="./js/main.js"></script>
 </body>
 
 </html>
