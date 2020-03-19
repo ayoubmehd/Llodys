@@ -63,6 +63,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #FFF;
 }
 
 img {
@@ -516,6 +517,10 @@ img {
 .header__nav-elms.show {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.header__nav-elm > a {
+  color: #000000;
 }
 
 @media (max-width: 1200px) {

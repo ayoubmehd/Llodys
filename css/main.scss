@@ -82,6 +82,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #FFF;
 }
 
 img {
@@ -502,7 +503,6 @@ img {
     max-width: 65%;
     flex: 1;
     align-items: center;
-
     @media(max-width: $md-media-brackpoint) {
       display: block;
       position: absolute;
@@ -530,7 +530,9 @@ img {
   }
 
   &__nav-elm {
-
+    & > a {
+      color: #000000;
+    }
     @media(max-width: $md-media-brackpoint) {
       padding: 1rem 0;
     }

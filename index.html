@@ -7,10 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!-- styles needed by jScrollPane -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/style/jquery.jscrollpane.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="./css/main.css">
+
   <title>LLody</title>
 </head>
 
@@ -25,12 +26,24 @@
       <div class="header__upper">
         <div class="header__upper-wapper container--flex container--flex--space-between padding--global py--p5">
           <ul class="header__contacts">
-            <li class="header__contact "><i class="fa fa-inbox header__contact-icon"
-                aria-hidden="true"></i>lmsc@lloyds.ma
+            <li class="header__contact ">
+              <a href="#">
+                <i class="fa fa-inbox header__contact-icon" aria-hidden="true"></i>
+                lmsc@lloyds.ma
+              </a>
             </li>
-            <li class="header__contact"><i class="header__contact-icon"></i>+212 5 24 62 39 62 </li>
-            <li class="header__contact"><i class="fa fa-phone header__contact-icon" aria-hidden="true"></i>+212 6 61
-              30 78 05</li>
+            <li class="header__contact">
+              <a href="#">
+                <i class="header__contact-icon"></i>
+                +212 5 24 62 39 62
+              </a>
+            </li>
+            <li class="header__contact">
+              <a href="#">
+                <i class="fa fa-phone header__contact-icon" aria-hidden="true"></i>
+                +212 6 61 30 05
+              </a>
+            </li>
           </ul>
           <div class="header__right">
             <i class="fa fa-facebook header__icon" aria-hidden="true"></i>
@@ -49,40 +62,39 @@
           </div>
         </div>
       </div>
-      <!-- 
-    <div class="header__middle py--p5">
-      <div class="header__wapper container--flex container--flex--space-between padding--global">
-        <div class="header__logo container--flex">
-          <img src="./icons/logo0.png" alt="LLody">
-        </div>
-        <div class="header__nav2 w50 container--flex container--flex--aligne--content--space-between flex--wrap">
-          <ul class="header__nav-elms2 w100 container--flex container--flex--space-between">
-            <li>News</li>
-            <li>Events</li>
-            <li>Terms And Conditions</li>
-            <li>Careers</li>
-          </ul>
-
-          <input type="search" class="radius header__search-bar no--border padding w100" placeholder="SEARCH" name=""
-            id="">
-        </div>
-      </div>
-    </div> -->
       <nav class="header__nav">
         <div class="container--flex container--flex--space-between padding--global header__nav-bar">
           <div class="header__logo container--flex">
             <img src="./icons/logo0.png" alt="LLody">
           </div>
           <ul class="uppercase header__nav-elms container--flex container--flex--space-between ">
-            <li class="header__nav-elm">Home</li>
-            <li class="header__nav-elm">About Us <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+            <li class="header__nav-elm">
+              <a href="#">Home</a>
             </li>
-            <li class="header__nav-elm">Services <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+            <li class="header__nav-elm">
+              <a href="#">
+                About Us
+                <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+              </a>
             </li>
-            <li class="header__nav-elm">Our People <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+            <li class="header__nav-elm">
+              <a href="#">
+                Services
+                <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+              </a>
             </li>
-            <li class="header__nav-elm">Global SURVEYOR NETWORK</li>
-            <li class="header__nav-elm">CONTACT US</li>
+            <li class="header__nav-elm">
+              <a href="#">
+                Our People
+                <i class="fa fa-chevron-down header__chivron" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="header__nav-elm">
+              <a href="#">Global SURVEYOR NETWORK</a>
+            </li>
+            <li class="header__nav-elm">
+              <a href="#">CONTACT US</a>
+            </li>
           </ul>
 
           <div class="container--flex header__get-aquote-container d-max-700--none">
@@ -101,7 +113,7 @@
       <div style="background-image: url('./img/header-bg.png');" class="header__hero background-image">
         <div class="overlay"></div>
         <div class="header__hero-container h--100">
-          <div class="header__hero-text container--flex padding--global h--100 text--center">
+          <div class="animated fadeInUp header__hero-text container--flex padding--global h--100 text--center">
             <h1 class="header__hero-title">Welcome to LMSC</h1>
             <p class="header__hero-description mt--1">
               LMSC is one of the world's leading independent marine surveying companies, providing a wide portfolio of
@@ -125,7 +137,7 @@
 
     <section class=" our-mission mt--4">
 
-      <div>
+      <div data-scroll data-animate="bounceInDown">
 
         <h2 class="our-mission__header text--center">Our Mission</h2>
         <p class="our-mission__text text--center mt--2 padding--global">
@@ -142,7 +154,7 @@
       <div class="grid our-mission__grid position--relative mt--2 h--min--45">
         <div class="our-mission__text w100 padding--global mb--2">
           <div class="">
-            <p class="w100 mt--2">
+            <p class="w100 mt--2" data-scroll data-animate="bounceInLeft">
               Our business focuses on all aspects of maritime transportation, construction / installation and
               drilling
               operations in the marine environment and upon the accidents and disputes that sometimes arise.
@@ -152,7 +164,9 @@
               organisation in all of our fields of activity globally.
             </p>
 
-            <p class="w100 mt--2">Our broad experience and our team's are highly valued by clients from almost
+            <p class="w100 mt--2" data-scroll data-animate="bounceInLeft">Our broad experience and our team's are highly
+              valued by clients from
+              almost
               every
               sector
               of
@@ -166,15 +180,15 @@
               ability to respond quickly and efficiently to all urgent incidents.</p>
           </div>
         </div>
-        <div style="background-image: url('./img/missions-img-1.jpg');"
+        <div data-scroll data-animate="fadeIn" style="background-image: url('./img/missions-img-1.jpg');"
           class="background--cover our-mission__img our-mission__img--1"></div>
-        <div style="background-image: url('./img/missions-img-2.jpg');"
+        <div data-scroll data-animate="fadeIn" style="background-image: url('./img/missions-img-2.jpg');"
           class="background--cover our-mission__img  our-mission__img--2"></div>
-        <div style="background-image: url('./img/missions-img-3.jpg');"
+        <div data-scroll data-animate="fadeIn" style="background-image: url('./img/missions-img-3.jpg');"
           class="background--cover our-mission__img  our-mission__img--3"></div>
-        <div style="background-image: url('./img/missions-img-4.jpg');"
+        <div data-scroll data-animate="fadeIn" style="background-image: url('./img/missions-img-4.jpg');"
           class="background--cover our-mission__img  our-mission__img--4"></div>
-        <div style="background-image: url('./img/missions-img-5.jpg');"
+        <div data-scroll data-animate="fadeIn" style="background-image: url('./img/missions-img-5.jpg');"
           class="background--cover our-mission__img  our-mission__img--5"></div>
       </div>
 
@@ -186,7 +200,7 @@
 
     <div class="our-vision py--4 pb--5">
       <div class="padding--global">
-        <h2 class="text--center">Our Vision</h2>
+        <h2 class="text--center" data-scroll class="bounceInLeft">Our Vision</h2>
         <div class="mt--2  text--center">
           To maintain our status as a reputable marine & engineering survey and consultancy organisation
           within the
@@ -233,24 +247,24 @@
           Professional Accreditations
         </h2>
         <div class="professional-accreditations__logos mt--2 px--4 text--center">
-          <img class="d--inline-block" src="./companys_logos/2.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/3.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/4.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/5.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/6.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/7.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/8.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/9.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/10.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/11.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/12.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/13.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/14.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/15.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/16.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/17.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/18.svg" alt="" srcset="">
-          <img class="d--inline-block" src="./companys_logos/19.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/2.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/3.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/4.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/5.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/6.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/7.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/8.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/9.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/10.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/11.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/12.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/13.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/14.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/15.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/16.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/17.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/18.svg" alt="" srcset="">
+          <img data-scroll data-animate="swing" class="d--inline-block" src="./companys_logos/19.svg" alt="" srcset="">
 
         </div>
       </div>
@@ -268,7 +282,8 @@
 
 
           <div class="features__card px--1 mb--2">
-            <div class="features__card--wapper radius background--white overflow--hidden">
+            <div data-scroll data-animate="fadeInLeft"
+              class="features__card--wapper radius background--white overflow--hidden">
               <div class="features__img-container">
                 <img src="./img/company.jpg" alt="LLody Company" srcset="">
               </div>
@@ -285,7 +300,8 @@
 
 
           <div class="features__card px--1 mb--2">
-            <div class="features__card--wapper radius background--white overflow--hidden">
+            <div data-scroll data-animate="fadeInLeft"
+              class="features__card--wapper radius background--white overflow--hidden">
               <div class="features__img-container">
                 <img src="./img/company.jpg" alt="LLody Company" srcset="">
               </div>
@@ -302,7 +318,8 @@
 
 
           <div class="features__card px--1 mb--2">
-            <div class="features__card--wapper radius background--white overflow--hidden">
+            <div data-scroll data-animate="fadeInRight"
+              class="features__card--wapper radius background--white overflow--hidden">
               <div class="features__img-container">
                 <img src="./img/company.jpg" alt="LLody Company" srcset="">
               </div>
@@ -319,7 +336,8 @@
 
 
           <div class="features__card px--1 mb--2">
-            <div class="features__card--wapper radius background--white overflow--hidden">
+            <div data-scroll data-animate="fadeInLeft"
+              class="features__card--wapper radius background--white overflow--hidden">
               <div class="features__img-container">
                 <img src="./img/company.jpg" alt="LLody Company" srcset="">
               </div>
@@ -336,7 +354,8 @@
 
 
           <div class="features__card px--1 mb--2">
-            <div class="features__card--wapper radius background--white overflow--hidden">
+            <div data-scroll data-animate="fadeInLeft"
+              class="features__card--wapper radius background--white overflow--hidden">
               <div class="features__img-container">
                 <img src="./img/company.jpg" alt="LLody Company" srcset="">
               </div>
@@ -353,7 +372,8 @@
 
 
           <div class="features__card px--1 mb--2">
-            <div class="features__card--wapper radius background--white overflow--hidden">
+            <div data-scroll data-animate="fadeInRight"
+              class="features__card--wapper radius background--white overflow--hidden">
               <div class="features__img-container">
                 <img src="./img/company.jpg" alt="LLody Company" srcset="">
               </div>
@@ -438,14 +458,7 @@
     <!-- latest jQuery direct from jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
     </script>
-
-    <!-- the mousewheel plugin - optional to provide mousewheel support -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"
-      integrity="sha256-VSluyclkkEBBFNZ6S8I2Okq/R6W0InHkqdukNreEYOY=" crossorigin="anonymous"></script> -->
-
-    <!-- the jScrollPane script -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/script/jquery.jscrollpane.js"
-      integrity="sha256-tvgvf6mC2sgo4q1GCerPKFg7q3C+3NnEmqkWR3HzGbg=" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="./js/main.js"></script>
 
   </div>
